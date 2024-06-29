@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2bc94;
+            color: #333;
+        }
+        .header {
+            background-color: #30110d;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: ;
+            padding: 2em 0;
+            color: #30110d;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .project {
+            background: #722620;
+            margin: 1em;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 2em);
+            box-sizing: border-box;
+            color: #f2bc94;
+        }
+        .project img {
+            max-width: 80%;
+            border-radius: 8px;
+            
+        }
+        .project h3 {
+            margin-top: 0;
+            color: white;
+        }
+        .project h4{
+            color: #f3e0d2;
+        }
+        .contact {
+            background-color: #30110d;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .Subtitulos{
+            width: 100%;
+            height: auto;
+            align-items: center;
+            color: #30110d;
+            
+
+        }
+        .lenguajes img{
+            width: 70px;
+            height: auto;
+            margin-top: 5px;
+        }
+        h2{
+            align-items: center;
+        }
+        .leng {
+            color: #f2bc94;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Comes Bernachea Jeremías</h1>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Bienvenido</h2>
+            <p>Soy un desarrollador apasionado con un sólido dominio en <b>lógica de programación</b> y <b>resolución de problemas</b>, habilidades que aplico tanto en <b>Desarrollo Android</b> como en <b>Desarrollo Web</b>. En mis proyectos de aplicaciones Android empleo <b>Kotlin</b>, y utilizo <b>FireBase o SQLite</b> para la persistencia de datos.</p>
+            <p>En el ámbito del <b>Desarrollo Web</b> utilizo, además de <b>HTML y CSS</b>, <b>JavaScript</b> para el Front-End y <b>Node.js</b> junto con <b>MongoDB</b> para el Back-End.</p>
+        </div>
+
+        <div class="projects">
+            <div class="Subtitulos">
+                <h2>Tecnologías</h2>                
+            </div>
+            <div class="lenguajes">
+                <img src="kotlin.png" alt="Kotlin">
+                <img src="javascript.png" alt="JavaScript">
+                <img src="SQLite.png" alt="SQLite">
+                <img src="node.png" alt="node.js">
+                <img src="mongoDB.png" alt="mongoDb">
+            </div>
+            <div class="Subtitulos">
+                <h2>Proyectos</h2>
+            </div>
+            <div class="project">
+                <img src="ProductApp.jpg" alt="ProductApp">            
+                <h3>ProductApp</h3>
+                <p>Aplicación para emprendedores. Realiza las cuatro operaciones básicas del CRUD. Crear, leer, actualizar y eliminar, de manera rápida y sencilla.</p>
+            <code class="leng">Kotlin - FireBase</code>
+            
+            </div>
+            <div class="project">
+                <img src="SuperHero.jpg" alt="AppSuperHero">
+                <h3>Buscador de Superhéroes</h3>
+                <p>Consumo de API de Superhéroes con Retrofit, implementación de Recyclerview</p>
+                <code class="leng">Kotlin</code>
+            </div>
+            <div class="project">
+                <img src="TODOAPP.jpg" alt="TodoApp">
+                <h3>Organizador de tareas</h3>
+                <p>Organizador de tareas. Utilizacion de Recyclerview y Dialog. Permanencia de datos com SQLite.</p>
+                <code class="leng">Kotlin - SQLite</code>
+                
+                
+            </div>
+            <div class="project">
+                <img src="IMC.jpg" alt="IMC">
+                <h3>Calculador IMC</h3>
+                <p>Calculador Indice de Masa Corporal</p>
+                <code class="leng">Kotlin</code>
+                
+            </div>
+            <div class="Subtitulos">
+                <h2>En proceso</h2>
+            </div>
+            <div class="project">
+                <img src="Pagina2.png" alt="PaginaWeb">
+                <h3>e-commerce</h3>
+                <p>Creacion de e-commerce de productos artesanales</p>
+                <code class="leng">HTML - CSS - JavaScript - Node.js - MongoDB</code>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contacto</h2>
+        <p>Si te interesa mi trabajo, no dudes en <a href="mailto:onepiece4810@hotmail.com">contactarme</a>.</p>
+        <p>Para mas información: <a href="https://www.linkedin.com/in/jeremias-comes-bernachea">Linkedin</a>
+    </div>
+
+</body>
+</html>

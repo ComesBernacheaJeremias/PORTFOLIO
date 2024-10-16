@@ -29,31 +29,39 @@
             color: #30110d;
             text-align: center;
         }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            text-align: center;
-        }
+       .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
         .project {
-            background: #722620;
-            margin: 1em;
-            padding: 1em;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: calc(33% - 2em);
-            box-sizing: border-box;
-            color: #f2bc94;
-        }
+    background: #722620;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 2em); /* Ajustado para hacerlo un poco más pequeño */
+    box-sizing: border-box;
+    color: #f2bc94;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+}
+
         .project img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-        }
+    max-width: 70%; /* Reducido para hacer las imágenes más pequeñas */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto; /* Asegura que la imagen esté centrada */
+}
+
         .carousel-item img {
-            max-width: 80%; 
-            height: auto;
-            border-radius: 8px;
+    max-width: 70%; /* También aplicamos el mismo ajuste aquí */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto; /* Centra las imágenes dentro del carrusel */
         }
         .project h3 {
             margin-top: 0;
@@ -63,11 +71,13 @@
             color: #f3e0d2;
         }
         .contact {
-            background-color: #30110d;
-            color: white;
-            padding: 2em 0;
-            text-align: center;
-        }
+    background-color: #30110d;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    margin: 0; /* Elimina cualquier margen no deseado */
+}
         .contact a {
             color: white;
             text-decoration: none;
@@ -127,6 +137,10 @@
                 <img src="github.png" alt="GitHub">
                 <img src="javascript.png" alt="JavaScript">
             </div>
+     <div class="projects">
+            <div class="Subtitulos">
+                <h2>Proyectos</h2>                
+      </div>
 
 <!-- Carrusel de Alarm Manager -->
     <div class="project">
@@ -177,7 +191,7 @@
         <div id="carouselProductApp" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="ProductApp/Register.jpg" alt="ProductApp Imagen 1">
+                    <img src="ProductApp/Registrarse.jpg" alt="ProductApp Imagen 1">
                 </div>
                 <div class="carousel-item">
                     <img src="ProductApp/Login.jpg" alt="ProductApp Imagen 2">

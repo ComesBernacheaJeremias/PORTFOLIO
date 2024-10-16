@@ -25,7 +25,6 @@
             margin: 0 auto;
         }
         .intro {
-            text-align: ;
             padding: 2em 0;
             color: #30110d;
             text-align: center;
@@ -48,14 +47,19 @@
         }
         .project img {
             max-width: 80%;
+            height: auto;
             border-radius: 8px;
-            
+        }
+        .carousel-item img {
+            max-width: 80%; 
+            height: auto;
+            border-radius: 8px;
         }
         .project h3 {
             margin-top: 0;
             color: white;
         }
-        .project h4{
+        .project p {
             color: #f3e0d2;
         }
         .contact {
@@ -71,36 +75,23 @@
         .contact a:hover {
             text-decoration: underline;
         }
-        .Subtitulos{
+        .Subtitulos {
             width: 100%;
             height: auto;
             align-items: center;
             color: #30110d;
-            
-
         }
-        .lenguajes img{
+        .lenguajes img {
             width: 70px;
             height: auto;
             margin-top: 5px;
         }
-        h2{
-            align-items: center;
+        h2 {
+            text-align: center;
         }
         .leng {
             color: #f2bc94;
         }
-        /* Mantener el tamaño de las imágenes */
-    .project img {
-        max-width: 80%;
-        height: auto;
-        border-radius: 8px;
-    }
-    .carousel-item img {
-        max-width: 80%; /* Mantiene el tamaño similar a lo que tenías antes */
-        height: auto;
-        border-radius: 8px;
-    }
         @media (max-width: 768px) {
             .project {
                 width: calc(50% - 2em);
@@ -114,11 +105,28 @@
     </style>
 </head>
 <body>
-
-<div class="projects">
-    <div class="Subtitulos">
-        <h2>Proyectos</h2>
+    <div class="header">
+        <h1>Comes Bernachea Jeremías</h1>
     </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Bienvenido</h2>
+            <p>Soy un <b>desarrollador Android</b> con experiencia en la creación de aplicaciones móviles eficientes y atractivas utilizando <b>Kotlin</b> y herramientas como <b>Jetpack Compose</b>, Retrofit, Dagger Hilt, View Binding, Picasso, entre otras. Tengo sólidos conocimientos en fundamentos de ingeniería en software y <b>pensamiento lógico</b>, lo que me permite resolver problemas y abordar desafíos técnicos con eficacia. Mi experiencia incluye la integración de Firebase Firestore y SQLite para la persistencia de datos. Además, he implementado características esenciales como la funcionalidad de inicio y cierre de sesión segura, asegurando una experiencia de usuario fluida y protegida.</p>
+        </div>
+
+        <div class="projects">
+            <div class="Subtitulos">
+                <h2>Tecnologías</h2>                
+            </div>
+            <div class="lenguajes">
+                <img src="kotlin.png" alt="Kotlin">
+                <img src="firebase.png" alt="Firebase">
+                <img src="SQLite.png" alt="SQLite">
+                <img src="git.png" alt="GIT">
+                <img src="github.png" alt="GitHub">
+                <img src="javascript.png" alt="JavaScript">
+            </div>
 
 <!-- Carrusel de Alarm Manager -->
     <div class="project">
@@ -153,14 +161,14 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductApp" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAlarmManager" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-        <h3>ProductApp</h3>
-        <p>Aplicación para emprendedores. Realiza las cuatro operaciones básicas del CRUD. Crear, leer, actualizar y eliminar, de manera rápida y sencilla.</p>
-        <code class="leng">Kotlin - FireBase</code>
+        <h3>Alarm Manager</h3>
+        <p>Aplicación que permite organizar y gestionar alarmas de una manera más eficiente a través de la asignación de categorías.</p>
+        <code class="leng">Kotlin - ROOM - Jetpack Compose - MVVM</code>
     </div>
     
 
@@ -169,7 +177,7 @@
         <div id="carouselProductApp" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="ProductApp/Register.jpg alt="ProductApp Imagen 1">
+                    <img src="ProductApp/Register.jpg" alt="ProductApp Imagen 1">
                 </div>
                 <div class="carousel-item">
                     <img src="ProductApp/Login.jpg" alt="ProductApp Imagen 2">
@@ -215,7 +223,7 @@
                     <img src="SuperHero.jpg" class="d-block w-100" alt="SuperHero Imagen 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="SuperHero2.jpg" class="d-block w-100" alt="SuperHero Imagen 2">
+                    <img src="SuperHero2.png" class="d-block w-100" alt="SuperHero Imagen 2">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselSuperHero" data-bs-slide="prev">
@@ -237,10 +245,10 @@
         <div id="carouselTodoApp" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="TODOAPP" class="d-block w-100" alt="TodoApp Imagen 1">
+                    <img src="TODOAPP.jpg" class="d-block w-100" alt="TodoApp Imagen 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="TODO2" class="d-block w-100" alt="TodoApp Imagen 2">
+                    <img src="TODO2.png" class="d-block w-100" alt="TodoApp Imagen 2">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselTodoApp" data-bs-slide="prev">
@@ -262,16 +270,16 @@
         <div id="carouselIMC" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="IMC" class="d-block w-100" alt="IMC Imagen 1">
+                    <img src="IMC.jpg" class="d-block w-100" alt="IMC Imagen 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="IMC2" class="d-block w-100" alt="IMC Imagen 2">
+                    <img src="IMC2.png" class="d-block w-100" alt="IMC Imagen 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="IMC3" class="d-block w-100" alt="IMC Imagen 3">
+                    <img src="IMC3.png" class="d-block w-100" alt="IMC Imagen 3">
                 </div>
                  <div class="carousel-item">
-                    <img src="IMC4" class="d-block w-100" alt="IMC Imagen 4">
+                    <img src="IMC4.png" class="d-block w-100" alt="IMC Imagen 4">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselIMC" data-bs-slide="prev">
@@ -289,74 +297,11 @@
     </div>
 </div>
 
-
-
-    
-
-    <div class="header">
-        <h1>Comes Bernachea Jeremías</h1>
-    </div>
-
-    <div class="container">
-        <div class="intro">
-            <h2>Bienvenido</h2>
-            <p>Soy un <b>desarrollador Android</b> con experiencia en la creación de aplicaciones móviles eficientes y atractivas utilizando <b>Kotlin</b> y herramientas como <b>Jetpack Compose</b>, Retrofit, Dagger Hilt, View Binding, Picasso, entre otras. Tengo sólidos conocimientos en fundamentos de ingeniería en software y <b>pensamiento lógico</b>, lo que me permite resolver problemas y abordar desafíos técnicos con eficacia. Mi experiencia incluye la integración de Firebase Firestore y SQLite para la persistencia de datos. Además, he implementado características esenciales como la funcionalidad de inicio y cierre de sesión segura, asegurando una experiencia de usuario fluida y protegida.</p>
-        </div>
-
-        <div class="projects">
-            <div class="Subtitulos">
-                <h2>Tecnologías</h2>                
-            </div>
-            <div class="lenguajes">
-                <img src="kotlin.png" alt="Kotlin">
-                <img src="firebase.png" alt="Firebase">
-                <img src="SQLite.png" alt="SQLite">                
-                <img src="git.png" alt="GIT">
-                <img src="github.png" alt="GitHub">
-                <img src="javascript.png" alt="JavaScript">
-                
-                
-                
-            </div>
-            <div class="Subtitulos">
-                <h2>Proyectos</h2>
-            </div>
-            <div class="project">
-                <img src="ProductApp.jpg" alt="ProductApp">            
-                <h3>ProductApp</h3>
-                <p>Aplicación para emprendedores. Realiza las cuatro operaciones básicas del CRUD. Crear, leer, actualizar y eliminar, de manera rápida y sencilla.</p>
-            <code class="leng">Kotlin - FireBase</code>
-            
-            </div>
-            <div class="project">
-                <img src="SuperHero.jpg" alt="AppSuperHero">
-                <h3>Buscador de Superhéroes</h3>
-                <p>Consumo de API de Superhéroes con Retrofit, implementación de Recyclerview</p>
-                <code class="leng">Kotlin</code>
-            </div>
-            <div class="project">
-                <img src="TODOAPP.jpg" alt="TodoApp">
-                <h3>Organizador de tareas</h3>
-                <p>Organizador de tareas. Utilizacion de Recyclerview y Dialog. Persistencia  de datos com SQLite.</p>
-                <code class="leng">Kotlin - SQLite</code>
-                
-                
-            </div>
-            <div class="project">
-                <img src="IMC.jpg" alt="IMC">
-                <h3>Calculador IMC</h3>
-                <p>Calculador Indice de Masa Corporal</p>
-                <code class="leng">Kotlin</code>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="contact">
+ <div class="contact">
         <h2>Contacto</h2>
         <p>Si te interesa mi trabajo, no dudes en <a href="mailto:jeremias4810@hotmail.com">contactarme</a>.</p>
-        <p>Para mas información: <a href="https://www.linkedin.com/in/jeremias-comes-bernachea">Linkedin</a>
-    </div>
-
+        <p>Para mas información: <a href="https://www.linkedin.com/in/jeremias-comes-bernachea">Linkedin</a></p>
+</div>
+             
 </body>
 </html>
